@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { FaBars, FaMoon, FaSun, FaTimes } from 'react-icons/fa';
 import { business } from '../data/business.js';
 import { useTheme } from '../context/ThemeContext.jsx';
+import logo from '../assets/logo/logo.png';
 
 const links = [
   { label: 'Home', path: '/' },
@@ -25,9 +26,20 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-charcoal/10 bg-ivory/90 backdrop-blur-xl transition-colors duration-300 dark:border-white/10 dark:bg-dark-bg/90">
       <nav className="container-lux flex h-20 items-center justify-between">
-        <Link to="/" className="group flex flex-col" onClick={() => setOpen(false)}>
-          <span className="font-heading text-2xl font-bold tracking-wide text-charcoal dark:text-dark-text">INTERIOR DECOR</span>
-          <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-gold">Nagaland</span>
+        <Link to="/" className="group flex items-center gap-4" onClick={() => setOpen(false)}>
+          <img
+            src={logo}
+            alt="Interior Decor logo"
+            className="h-10 w-auto min-w-[2.5rem] max-w-[5rem] object-contain sm:h-12 md:h-14 lg:h-16"
+            loading="eager"
+          />
+
+          <div className="flex flex-col">
+            <span className="font-heading text-xl font-bold tracking-wide text-charcoal dark:text-dark-text sm:text-2xl">
+              INTERIOR DECOR
+            </span>
+            <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-gold">Nagaland</span>
+          </div>
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">
