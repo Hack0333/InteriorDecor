@@ -23,7 +23,7 @@ export default function BlogPage() {
         <div className="container-lux grid gap-7 md:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post, index) => (
             <motion.article
-              key={post.title}
+              key={post.slug}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -45,9 +45,20 @@ export default function BlogPage() {
                 </div>
                 <h2 className="mt-4 text-2xl font-bold leading-tight text-charcoal dark:text-dark-text">{post.title}</h2>
                 <p className="mt-4 leading-7 text-charcoal/70 dark:text-dark-muted">{post.excerpt}</p>
-                <Link to="/contact" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-gold">
-                  Ask an Expert <FaArrowRight className="transition group-hover:translate-x-1" />
-                </Link>
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="inline-flex items-center gap-2 text-sm font-bold text-gold"
+                  >
+                    Read full article <FaArrowRight className="transition group-hover:translate-x-1" />
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center justify-center rounded-full border border-charcoal/10 bg-charcoal/5 px-4 py-2 text-sm font-semibold text-charcoal transition-colors duration-300 hover:bg-charcoal/10 dark:border-white/10 dark:bg-white/5 dark:text-white"
+                  >
+                    Ask an Expert
+                  </Link>
+                </div>
               </div>
             </motion.article>
           ))}

@@ -11,14 +11,31 @@ import PortfolioPage from './pages/PortfolioPage.jsx';
 import TestimonialsPage from './pages/TestimonialsPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import BlogPage from './pages/BlogPage.jsx';
+import BlogPostPage from './pages/BlogPostPage.jsx';
 import LocalLandingPage from './pages/LocalLandingPage.jsx';
 import { pageMeta } from './data/seo.js';
+import { blogPosts } from './data/blog.js';
 
 function SEOUpdater() {
   const location = useLocation();
 
   useEffect(() => {
-    const meta = pageMeta[location.pathname] || pageMeta.default;
+    const path = location.pathname;
+    let meta = pageMeta[path] || pageMeta.default;
+
+    if (path.startsWith('/blog/')) {
+      const slug = path.split('/').pop();
+      const post = blogPosts.find((item) => item.slug === slug);
+      if (post) {
+        meta = {
+          title: `${post.title} | INTERIOR DECOR Blog`,
+          description: post.excerpt,
+        };
+      } else {
+        meta = pageMeta['/blog'];
+      }
+    }
+
     document.title = meta.title;
     const description = document.querySelector('meta[name="description"]');
     if (description) description.setAttribute('content', meta.description);
@@ -56,6 +73,7 @@ export default function App() {
           <Route path="/portfolio" element={<PageShell><PortfolioPage /></PageShell>} />
           <Route path="/testimonials" element={<PageShell><TestimonialsPage /></PageShell>} />
           <Route path="/blog" element={<PageShell><BlogPage /></PageShell>} />
+          <Route path="/blog/:slug" element={<PageShell><BlogPostPage /></PageShell>} />
           <Route path="/contact" element={<PageShell><ContactPage /></PageShell>} />
           <Route path="/locations/:slug" element={<PageShell><LocalLandingPage /></PageShell>} />
         </Routes>

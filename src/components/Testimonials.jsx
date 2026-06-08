@@ -10,8 +10,9 @@ export default function Testimonials() {
     <section className="bg-ivory py-20 transition-colors duration-300 dark:bg-dark-bg lg:py-28">
       <div className="container-lux">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="section-kicker">Customer Reviews</p>
-          <h2 className="section-title">Trusted by homeowners and commercial clients across Nagaland.</h2>
+          <p className="section-kicker">Featured Customer Reviews</p>
+          <h2 className="section-title">Trusted by homeowners and businesses across Nagaland.</h2>
+          <p className="mt-3 text-sm text-charcoal/70 dark:text-dark-muted">Rated 5 stars on the review app for quality service and premium results.</p>
         </div>
 
         <div className="mt-12">
