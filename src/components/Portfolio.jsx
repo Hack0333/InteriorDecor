@@ -51,7 +51,7 @@ export default function Portfolio({ featured = false }) {
             >
               <img
                 src={item.image}
-                alt={`${item.title} by INTERIOR DECOR`}
+                alt={`Modern ${item.category.toLowerCase()} interior design project by INTERIOR DECOR in Dimapur, Nagaland`}
                 loading="lazy"
                 className="h-auto w-full object-cover transition duration-700 group-hover:scale-105"
               />
@@ -91,7 +91,7 @@ export default function Portfolio({ featured = false }) {
               className="max-h-[86vh] max-w-5xl overflow-hidden bg-white dark:bg-dark-card"
               onClick={(event) => event.stopPropagation()}
             >
-              <img src={selected.image} alt={selected.title} className="max-h-[72vh] w-full object-cover" />
+              <img src={selected.image} alt={`${selected.title} project by INTERIOR DECOR in Dimapur, Nagaland`} className="max-h-[72vh] w-full object-cover" />
               <figcaption className="p-5">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-gold">{selected.location}</p>
                 <h3 className="mt-1 text-2xl font-bold text-charcoal dark:text-dark-text">{selected.title}</h3>
