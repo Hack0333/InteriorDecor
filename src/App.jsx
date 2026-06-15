@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import FloatingActions from './components/FloatingActions.jsx';
+import SEO from './components/SEO.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import ServicesPage from './pages/ServicesPage.jsx';
@@ -13,37 +13,7 @@ import ContactPage from './pages/ContactPage.jsx';
 import BlogPage from './pages/BlogPage.jsx';
 import BlogPostPage from './pages/BlogPostPage.jsx';
 import LocalLandingPage from './pages/LocalLandingPage.jsx';
-import { pageMeta } from './data/seo.js';
-import { blogPosts } from './data/blog.js';
-
-function SEOUpdater() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const path = location.pathname;
-    let meta = pageMeta[path] || pageMeta.default;
-
-    if (path.startsWith('/blog/')) {
-      const slug = path.split('/').pop();
-      const post = blogPosts.find((item) => item.slug === slug);
-      if (post) {
-        meta = {
-          title: `${post.title} | INTERIOR DECOR Blog`,
-          description: post.excerpt,
-        };
-      } else {
-        meta = pageMeta['/blog'];
-      }
-    }
-
-    document.title = meta.title;
-    const description = document.querySelector('meta[name="description"]');
-    if (description) description.setAttribute('content', meta.description);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [location.pathname]);
-
-  return null;
-}
+import InteriorDesignerDimapur from './pages/InteriorDesignerDimapur.jsx';
 
 function PageShell({ children }) {
   return (
@@ -63,7 +33,7 @@ export default function App() {
 
   return (
     <>
-      <SEOUpdater />
+      <SEO />
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
@@ -74,6 +44,7 @@ export default function App() {
           <Route path="/testimonials" element={<PageShell><TestimonialsPage /></PageShell>} />
           <Route path="/blog" element={<PageShell><BlogPage /></PageShell>} />
           <Route path="/blog/:slug" element={<PageShell><BlogPostPage /></PageShell>} />
+          <Route path="/services/interior-designer-dimapur" element={<PageShell><InteriorDesignerDimapur /></PageShell>} />
           <Route path="/contact" element={<PageShell><ContactPage /></PageShell>} />
           <Route path="/locations/:slug" element={<PageShell><LocalLandingPage /></PageShell>} />
         </Routes>
