@@ -35,7 +35,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-bold">Services</h3>
           <div className="mt-5 grid gap-3 text-white/70">
-            {services.slice(0, 6).map((service) => (
+            {services.map((service) => (
               <Link key={service.title} to={`/services#${service.slug}`} className="hover:text-gold">
                 {service.title}
               </Link>
