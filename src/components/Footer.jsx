@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { FaInstagram, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 import { business } from '../data/business.js';
 import { services } from '../data/services.js';
-import { localPages } from '../data/seo.js';
+import { localPages } from '../seo/seo.js';
 
 export default function Footer() {
   return (

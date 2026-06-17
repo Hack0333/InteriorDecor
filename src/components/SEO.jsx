@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { pageMeta, localPages, baseUrl } from '../data/seo.js';
+import { pageMeta, localPages, baseUrl } from '../seo/seo.js';
+import staticSchema from '../seo/schema.js';
 import { blogPosts } from '../data/blog.js';
 import { business } from '../data/business.js';
 
@@ -126,63 +127,33 @@ function getPageSchema(path, meta, post = null) {
       }
     : null;
 
-  return [
+  const pageGraph = [
+    ...staticSchema['@graph'],
     {
-      '@context': 'https://schema.org',
-      '@graph': [
-        {
-          '@type': 'WebSite',
-          '@id': `${baseUrl}/#website`,
-          url: baseUrl,
-          name: business.name,
-          description: meta.description,
-          publisher: {
-            '@type': 'Organization',
-            name: business.name,
-          },
-        },
-        {
-          '@type': 'BreadcrumbList',
-          itemListElement: getBreadcrumbList(path, meta.title).itemListElement,
-        },
-        {
-          '@type': 'LocalBusiness',
-          '@id': `${baseUrl}/#business`,
-          name: business.name,
-          description: business.tagline,
-          telephone: business.phone,
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'Airport Road, Airport Junction, 3rd Mile',
-            addressLocality: 'Dimapur',
-            addressRegion: 'Nagaland',
-            postalCode: '797112',
-            addressCountry: 'IN',
-          },
-          geo: {
-            '@type': 'GeoCoordinates',
-            latitude: business.coordinates.latitude,
-            longitude: business.coordinates.longitude,
-          },
-          url: baseUrl,
-          sameAs: [business.instagram],
-          areaServed: ['Dimapur', 'Chümoukedima', 'Kohima', 'Nagaland'],
-        },
-        {
-          '@type': 'Service',
-          name: 'Interior Design and False Ceiling Services',
-          provider: { '@id': `${baseUrl}/#business` },
-          serviceType: [
-            'Interior Designer Dimapur',
-            'False Ceiling Contractor Dimapur',
-            'PVC Panel Installation Nagaland',
-            'Commercial Interior Design Nagaland',
-          ],
-          areaServed: ['Dimapur', 'Chümoukedima', 'Kohima', 'Nagaland'],
-        },
-      ].concat(articleSchema ? [articleSchema] : []),
+      '@type': 'WebSite',
+      '@id': `${baseUrl}/#website`,
+      url: baseUrl,
+      name: business.name,
+      description: meta.description,
+      publisher: {
+        '@type': 'Organization',
+        name: business.name,
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: getBreadcrumbList(path, meta.title).itemListElement,
     },
   ];
+
+  if (articleSchema) {
+    pageGraph.push(articleSchema);
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': pageGraph,
+  };
 }
 
 export default function SEO() {

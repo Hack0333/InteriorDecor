@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import Services from '../components/Services.jsx';
 import CTA from '../components/CTA.jsx';
-import { localPages } from '../data/seo.js';
+import { localPages } from '../seo/seo.js';
 import { business } from '../data/business.js';
 
 export default function LocalLandingPage() {
