@@ -20,7 +20,7 @@ export default function LocalLandingPage() {
           }}
         />
         <div className="container-lux relative max-w-4xl">
-          <p className="section-kicker">Local SEO Service Area</p>
+          <p className="section-kicker">Best interior designer in {page.city}</p>
           <h1 className="mt-4 text-5xl font-bold leading-tight sm:text-6xl">{page.title}</h1>
           <p className="mt-6 text-lg leading-8 text-white/75 dark:text-dark-muted">{page.description}</p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">

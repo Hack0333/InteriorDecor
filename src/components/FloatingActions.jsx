@@ -13,7 +13,7 @@ export default function FloatingActions() {
       </a>
       <a
         href={business.phoneHref}
-        className="grid h-14 w-14 place-items-center rounded-full bg-gold text-xl text-white shadow-luxury md:hidden"
+        className="grid h-14 w-14 place-items-center rounded-full bg-gold text-xl text-white shadow-luxury"
         aria-label="Call INTERIOR DECOR"
       >
         <FaPhoneAlt />
