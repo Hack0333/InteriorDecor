@@ -4,7 +4,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { FaBars, FaMoon, FaSun, FaTimes } from 'react-icons/fa';
 import { business } from '../data/business.js';
 import { useTheme } from '../context/ThemeContext.jsx';
-import logo from '../assets/logo/logo.png';
+import logo from '../assets/logo/interior-decor-logo.png';
+// import logo from '../assets/logo/interiorDecorLogo.png';
 
 const links = [
   { label: 'Home', path: '/' },
@@ -26,11 +27,11 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-charcoal/10 bg-ivory/90 backdrop-blur-xl transition-colors duration-300 dark:border-white/10 dark:bg-dark-bg/90">
       <nav className="container-lux flex h-20 items-center justify-between">
-        <Link to="/" className="group flex items-center gap-4" onClick={() => setOpen(false)}>
+        <Link to="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
           <img
             src={logo}
             alt="Interior Decor logo"
-            className="h-10 w-auto min-w-[2.5rem] max-w-[5rem] object-contain sm:h-12 md:h-14 lg:h-16"
+            className="h-10 w-auto min-w-[2.5rem] max-w-[5rem] object-contain sm:h-12 md:h-14 lg:h-16 p-2"
             loading="eager"
           />
 
