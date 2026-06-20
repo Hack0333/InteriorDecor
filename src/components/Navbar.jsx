@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { FaBars, FaMoon, FaSun, FaTimes } from 'react-icons/fa';
 import { business } from '../data/business.js';
 import { useTheme } from '../context/ThemeContext.jsx';
-import logo from '../assets/logo/interior-decor-logo.png';
+import logo from '../assets/logo/interior_decor_logo.webp';
 // import logo from '../assets/logo/interiorDecorLogo.png';
 
 const links = [
