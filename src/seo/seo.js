@@ -3,9 +3,9 @@ export const baseUrl = "https://interiordecordimapur.com";
 export const pageMeta = {
   default: {
     title: "Best Interior Designer in Dimapur - Interior Decor",
-    description: "Interior Decor is Dimapur's trusted design firm. We specialize in false ceilings, waterproof PVC wall panels, modular kitchens, and office interiors.",
+    description: "Interior Decor is a trusted design firm serving Nagaland and Assam. We specialize in false ceilings, waterproof PVC wall panels, modular kitchens, and office interiors.",
     keywords:
-      "interior designer dimapur, best interior designer dimapur, false ceiling contractor dimapur, pvc panel installation dimapur, gypsum ceiling contractor dimapur, interior design nagaland",
+      "interior designer dimapur, interior designer assam, best interior designer dimapur, false ceiling contractor dimapur, pvc panel installation dimapur, gypsum ceiling contractor dimapur, interior design nagaland, interior design assam",
     image: `${baseUrl}/interior-decor-preview.png`,
     robots: "index, follow",
     ogType: "website",
@@ -15,10 +15,10 @@ export const pageMeta = {
   },
 
   "/": {
-    title: "Interior Designer in Dimapur - False Ceiling & PVC",
-    description: "Get premium interior design in Dimapur. We install waterproof PVC panels, modern gypsum false ceilings, and bespoke modular kitchens across Nagaland.",
+    title: "Interior Designer in Dimapur & Assam - False Ceiling & PVC",
+    description: "Get premium interior design across Nagaland and Assam. We install waterproof PVC panels, modern gypsum false ceilings, and bespoke modular kitchens.",
     keywords:
-      "interior designer dimapur, false ceiling contractor dimapur, pvc panel installation dimapur, gypsum ceiling dimapur, interior design nagaland",
+      "interior designer dimapur, interior designer assam, false ceiling contractor dimapur, pvc panel installation dimapur, gypsum ceiling dimapur, interior design nagaland, interior design assam, false ceiling assam",
     image: `${baseUrl}/interior-decor-preview.png`,
     robots: "index, follow",
     ogType: "website",
@@ -82,10 +82,10 @@ export const pageMeta = {
   },
 
   "/contact": {
-    title: "Contact Interior Decor - Free Design Consultation",
-    description: "Contact Interior Decor in Dimapur for a free site visit, quotation, and consultation. Expert false ceilings, wall paneling, and home interiors.",
+    title: "Contact Interior Decor - Free Design Consultation Nagaland & Assam",
+    description: "Contact Interior Decor for a free site visit and consultation. We serve Dimapur, Nagaland and Lahorijan, Assam with expert false ceilings, wall paneling, and home interiors.",
     keywords:
-      "contact interior designer dimapur, interior consultation dimapur",
+      "contact interior designer dimapur, interior consultation dimapur, interior designer nagaland, interior designer assam",
     image: `${baseUrl}/interior-decor-preview.png`,
     robots: "index, follow",
   },
@@ -303,5 +303,71 @@ export const localPages = {
   title: "Interior Designer in River Belt Colony Dimapur",
   description: "Interior design and false ceiling specialists in River Belt Colony, Dimapur.",
   city: "River Belt Colony",
+},
+
+"interior-designer-in-assam": {
+  title: "Interior Designer in Assam - Lahorijan & Bokajan",
+  description: "Premium interior design services across Assam. We specialize in false ceilings, PVC wall panels, modular kitchens, and complete renovations in Lahorijan, Bokajan, Karbi Anglong, and Golaghat.",
+  city: "Assam",
+},
+
+"interior-designer-in-lahorijan": {
+  title: "Interior Designer in Lahorijan Assam - Home & Commercial",
+  description: "Expert interior design services in Lahorijan, Assam. False ceilings, PVC panels, WPC cladding, modular kitchens, and turnkey interior projects.",
+  city: "Lahorijan",
+},
+
+"interior-designer-in-bokajan": {
+  title: "Interior Designer in Bokajan Assam - Modern Interiors",
+  description: "Professional home and office interior design in Bokajan. PVC wall panels, gypsum false ceilings, modular kitchens, and renovation solutions.",
+  city: "Bokajan",
+},
+
+"interior-designer-in-karbi-anglong": {
+  title: "Interior Designer in Karbi Anglong Assam - Design Services",
+  description: "Trusted interior design and renovation services in Karbi Anglong. False ceilings, decorative panels, modular kitchens, and commercial interiors.",
+  city: "Karbi Anglong",
+},
+
+"interior-designer-in-golaghat": {
+  title: "Interior Designer in Golaghat Assam - Premium Interiors",
+  description: "Complete interior design solutions in Golaghat, Assam. PVC panels, false ceilings, WPC cladding, modular kitchens, and office interiors.",
+  city: "Golaghat",
+},
+
+"interior-designer-in-numaligarh": {
+  title: "Interior Designer in Numaligarh Assam - Home & Office Interiors",
+  description: "Interior Decor provides professional interior design, false ceilings, and wall panel solutions in Numaligarh, Assam for residential and commercial projects.",
+  city: "Numaligarh",
+},
+
+"interior-designer-in-dergaon": {
+  title: "Interior Designer in Dergaon Assam - Modern Interiors",
+  description: "Trusted interior design services in Dergaon, Assam. We deliver PVC wall panels, false ceilings, and turnkey interior solutions for homes and businesses.",
+  city: "Dergaon",
+},
+
+"false-ceiling-in-assam": {
+  title: "False Ceiling Contractor in Assam - Gypsum & PVC",
+  description: "Professional false ceiling design and installation across Assam. Expert gypsum, PVC, and POP ceiling work in Lahorijan, Bokajan, and surrounding regions.",
+  city: "Assam",
+},
+
+"pvc-wall-panels-assam": {
+  title: "PVC Wall Panels Assam - Dampness Proof Installation",
+  description: "Decorative PVC wall panel installation in Assam. Moisture-resistant, termite-proof fluted panels for homes and commercial spaces.",
+  city: "Assam",
+},
+
+"modular-kitchen-assam": {
+  title: "Modular Kitchen Design in Assam - Lahorijan & Bokajan",
+  description: "Bespoke modular kitchen design and installation across Assam. Customized layouts with BWP marine plywood and premium fittings.",
+  city: "Assam",
+},
+
+"commercial-interior-design-assam": {
+  title: "Commercial Interior Design Assam - Office & Retail",
+  description: "Turnkey commercial interior design for offices, showrooms, and retail stores across Assam. Professional space planning and high-impact layouts.",
+  city: "Assam",
 },
 };

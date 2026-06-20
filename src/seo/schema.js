@@ -71,6 +71,66 @@ const schema = {
           '@type': 'AdministrativeArea',
           name: 'Wokha',
         },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Mon',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Phek',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Tuensang',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Zunheboto',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Niuland',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Peren',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Tseminyu',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Longleng',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Kiphire',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Meluri',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Shamator',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Lahorijan',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Bokajan',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Karbi Anglong',
+        },
+        {
+          '@type': 'AdministrativeArea',
+          name: 'Golaghat',
+        },
       ],
     },
     {
