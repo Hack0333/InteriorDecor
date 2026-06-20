@@ -3,6 +3,7 @@ export const business = {
   tagline: 'Transforming Spaces with Premium Interior Solutions',
   address: 'Airport Road, Airport Junction, 3rd Mile, Dimapur, Nagaland 797112',
   phone: '+91 81318 97816',
+  email: 'interiordecor816@gmail.com',
   phoneHref: 'tel:+918131897816',
   whatsapp: 'https://wa.me/918131897816?text=Hello%20INTERIOR%20DECOR%2C%20I%20would%20like%20a%20free%20consultation.',
   instagram: 'https://www.instagram.com/interiordecor_nagaland/',

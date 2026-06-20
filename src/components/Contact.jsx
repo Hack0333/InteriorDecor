@@ -80,7 +80,7 @@ export default function Contact() {
               <p className="font-semibold text-charcoal dark:text-dark-text">General Enquiries</p>
               <p className="mt-2 flex gap-4 text-charcoal/75 dark:text-dark-muted">
                 <FaEnvelope className="mt-1 shrink-0 text-gold" />
-                enquiries@interiordecor-nagaland.com
+                interiordecor816@gmail.com
               </p>
             </div>
             <p className="text-sm text-charcoal/60 dark:text-dark-muted/70">
