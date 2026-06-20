@@ -42,7 +42,7 @@ export const locations = {
       longitude: 92.8456,
     },
     directions:
-      'https://www.google.com/maps/dir//24V,+Lahorijan,+Dimapur,+Assam+782490',
+      'https://www.google.com/maps/dir//Interior+Decor,+24v,+Lahorijan,+Dimapur,+Assam+782490',
     mapEmbed: 'https://www.google.com/maps?q=26.1234,92.8456&z=16&output=embed',
   },
 };
