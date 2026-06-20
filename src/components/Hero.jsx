@@ -23,15 +23,15 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="max-w-4xl"
         >
-          <p className="section-kicker text-gold">Premium Interior Design in Nagaland</p>
+          <p className="section-kicker text-gold">Premium Interior Design in Nagaland and Assam.</p>
           <h1 className="mt-5 text-5xl font-bold leading-[1.02] sm:text-6xl lg:text-7xl">
-            Transforming Spaces Across Nagaland
+            Transforming Spaces Across Nagaland and Assam
           </h1>
           <p className="mt-4 text-xl font-semibold uppercase tracking-[0.2em] text-white/85">
-            Professional Interior Designers in Dimapur
+            Professional Interior Designers in Dimapur and Lahorijan
           </p>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85 sm:text-xl">
-            Expert residential and commercial interior design services rooted in Dimapur, serving homes and offices across Nagaland with modern, functional, and meaningful spaces.
+            Expert residential and commercial interior design services rooted in Dimapur and Lahorijan, serving homes and offices across Nagaland and Assam with modern, functional, and meaningful spaces.
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a href={business.whatsapp} className="btn-primary">

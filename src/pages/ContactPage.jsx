@@ -7,10 +7,10 @@ export default function ContactPage() {
         <div className="container-lux max-w-4xl">
           <p className="section-kicker">Contact INTERIOR DECOR</p>
           <h1 className="mt-4 text-5xl font-bold leading-tight sm:text-6xl">
-            Speak with an interior designer in Dimapur today.
+            Speak with an interior designer in Nagaland or Assam today.
           </h1>
           <p className="mt-6 text-lg leading-8 text-white/75 dark:text-dark-muted">
-            Contact us for false ceilings, wall panels, gypsum work, PVC panels, POP designs and complete interior solutions in Nagaland.
+            Contact us for false ceilings, wall panels, gypsum work, PVC panels, POP designs, and complete interior solutions. We serve Dimapur, Nagaland and Lahorijan, Assam with comprehensive design and renovation services.
           </p>
         </div>
       </section>
