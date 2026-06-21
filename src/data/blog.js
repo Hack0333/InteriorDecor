@@ -36,7 +36,7 @@ export const blogPosts = [
     image:
       "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80",
     content: [
-      " In this guide, we compare PVC and gypsum false ceilings through the lens of Nagaland’s weather, Dimapur budgets, and local interiors. This article helps homeowners decide which material delivers the right balance of durability, style, and maintenance.",
+      "In this guide, we compare PVC and gypsum false ceilings through the lens of Nagaland’s weather, Dimapur budgets, and local interiors. This article helps homeowners decide which material delivers the right balance of durability, style, and maintenance.",
       "What is a PVC false ceiling? PVC panels are made from Polyvinyl Chloride and are engineered for moisture resistance. They are lightweight, available in many finishes, and are often installed in kitchens, bathrooms, balconies, and utility spaces.",
       "What is a gypsum false ceiling? Gypsum ceilings use gypsum boards mounted on a metal framework. They offer a smooth, plaster-like surface and support complex designs, hidden lighting, and elegant molding details.",
       "Local climate considerations in Nagaland Nagaland sees heavy monsoon humidity and seasonal temperature changes. PVC performs well in damp environments, while gypsum works best in dry, climate-controlled spaces when protected from direct moisture.",
@@ -151,7 +151,7 @@ export const blogPosts = [
     image:
       "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80",
     content: [
-      "Overview: This guide explains false ceiling cost drivers in Nagaland, including gypsum, PVC, POP, labour, design complexity, and installation realities for Dimapur and beyond.",
+      "This guide explains false ceiling cost drivers in Nagaland, including gypsum, PVC, POP, labour, design complexity, and installation realities for Dimapur and beyond.",
       "False ceiling cost in Nagaland depends on the material, room size, design details, and installation quality. Local weather and supply chains also influence pricing, especially for moisture-resistant systems.",
       "Gypsum ceilings are popular for premium interiors. They offer smooth finishes and design flexibility, but they typically cost more than simpler materials due to the additional labour involved.",
       "PVC ceilings are a cost-effective option. PVC panels are moisture-resistant, quick to install, and easier to maintain, making them a strong choice for kitchens and bathrooms in Nagaland.",
@@ -188,7 +188,7 @@ export const blogPosts = [
     image:
       "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
     content: [
-      "Overview: Small homes in Dimapur, Kohima, and Chumoukedima need modular kitchen designs that conserve space while delivering practical storage and a modern look. This guide covers layouts, materials, lighting, and local planning tips.",
+      "Small homes in Dimapur, Kohima, and Chumoukedima need modular kitchen designs that conserve space while delivering practical storage and a modern look. This guide covers layouts, materials, lighting, and local planning tips.",
       "Modular kitchens are built around standard cabinet units and efficient storage systems. They help small spaces feel organised and functional without sacrificing style.",
       "Choose the right layout. Straight-line kitchens work well in narrow rooms. L-shaped kitchens fit corner areas and offer more counter space. U-shaped kitchens provide maximum storage within a compact footprint.",
       "Tall cabinets are one of the best space-saving solutions. They use vertical space for pantry storage, tall ovens, and large cupboards, freeing up lower cabinets for everyday items.",
@@ -224,7 +224,7 @@ export const blogPosts = [
     image:
       "https://images.unsplash.com/photo-1496284045406-d7d73e8ac0ee?auto=format&fit=crop&w=1200&q=80",
     content: [
-      "Overview: Choosing an interior designer in Dimapur requires local knowledge, clear project goals, and an understanding of budgets, materials, and quality expectations. This guide helps you compare designers and choose the right partner for Nagaland interiors.",
+      "Choosing an interior designer in Dimapur requires local knowledge, clear project goals, and an understanding of budgets, materials, and quality expectations. This guide helps you compare designers and choose the right partner for Nagaland interiors.",
       "Why local expertise matters in Dimapur. Designers who know Nagaland understand material sourcing, contractor networks, and climate-related needs. This local insight helps the project run smoothly and delivers a better final result.",
       "Start with a clear project brief. Define whether you are renovating a home, designing a modular kitchen, installing a false ceiling, or fitting out a retail shop. A clear brief helps designers provide accurate proposals.",
       "Look for designers with relevant local experience. Ask for examples of Dimapur, Kohima, or Chumoukedima projects, especially those that showcase kitchens, false ceilings, and compact home interiors.",
