@@ -99,7 +99,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold">Services</h3>
             <div className="mt-5 grid gap-3 text-white/70 max-h-[18rem] overflow-y-auto pr-2">
               {services.map((service) => (
-                <Link key={service.slug} to={`/services#${service.slug}`} className="hover:text-gold">
+                <Link key={service.slug} to={`/services#${service.anchor || service.slug}`} className="hover:text-gold">
                   {service.title}
                 </Link>
               ))}

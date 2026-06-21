@@ -1,6 +1,5 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect } from 'react';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import FloatingActions from './components/FloatingActions.jsx';
@@ -17,10 +16,6 @@ import LocalLandingPage from './pages/LocalLandingPage.jsx';
 import InteriorDesignerDimapur from './pages/InteriorDesignerDimapur.jsx';
 
 function PageShell({ children }) {
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-  }, []);
-
   return (
     <motion.main
       initial={{ opacity: 0, y: 18 }}

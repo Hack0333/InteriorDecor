@@ -13,15 +13,36 @@ export default function ServicesPage() {
     if (pathname !== '/services' || !hash) return;
 
     const id = hash.replace('#', '');
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    
+    const attemptScroll = () => {
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
+        return true;
+      }
+      return false;
+    };
+
+    // Try immediate scroll
+    if (attemptScroll()) return;
+
+    // Poll for element if not immediately available (lazy-rendered content)
+    let attempts = 0;
+    const pollInterval = setInterval(() => {
+      attempts += 1;
+      if (attemptScroll() || attempts > 15) {
+        clearInterval(pollInterval);
+      }
+    }, 100);
+
+    return () => clearInterval(pollInterval);
   }, [hash, pathname]);
 
   return (
     <>
-      <section className="bg-charcoal py-24 text-white transition-colors duration-300 dark:bg-dark-panel lg:py-32">
+      <section id="services" className="bg-charcoal py-24 text-white transition-colors duration-300 dark:bg-dark-panel lg:py-32">
         <div className="container-lux max-w-4xl">
           <p className="section-kicker">False Ceiling, PVC Panels & Interior Design</p>
           <h1 className="mt-4 text-5xl font-bold leading-tight sm:text-6xl">
@@ -39,13 +60,13 @@ export default function ServicesPage() {
             const Icon = service.icon;
             return (
               <motion.article
-                id={service.slug}
+                id={service.anchor || service.slug}
                 key={service.title}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.04 }}
-                style={{ scrollMarginTop: '5.5rem' }}
+                style={{ scrollMarginTop: '6rem' }}
                 className="grid overflow-hidden border border-charcoal/10 bg-ivory transition-colors duration-300 dark:border-white/10 dark:bg-dark-card lg:grid-cols-[0.9fr_1.1fr]"
               >
                 <img src={service.image} alt={service.title} loading="lazy" className="h-72 w-full object-cover lg:h-full" />

@@ -31,7 +31,7 @@ export default function Services({ limit }) {
                 </div>
                 <h3 className="mt-6 text-2xl font-bold text-charcoal dark:text-dark-text">{service.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-charcoal/70 dark:text-dark-muted">{service.description}</p>
-                <Link to={`/services#${service.slug}`} className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-gold">
+                <Link to={`/services#${service.anchor || service.slug}`} className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-gold">
                   Explore <FaArrowRight className="transition group-hover:translate-x-1" />
                 </Link>
               </motion.article>

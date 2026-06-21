@@ -13,6 +13,7 @@ export const services = [
   {
     title: 'False Ceilings',
     slug: 'false-ceilings',
+    anchor: 'false-ceiling',
     icon: FaRegLightbulb,
     image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
     description: 'Modern ceiling concepts for living rooms, bedrooms, offices and commercial spaces.',
@@ -22,6 +23,7 @@ export const services = [
   {
     title: 'PVC Panels',
     slug: 'pvc-panels',
+    anchor: 'pvc-panels',
     icon: FaLayerGroup,
     image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
     description: 'Durable PVC panels for ceilings and walls with elegant, low-maintenance finishes.',
@@ -31,6 +33,7 @@ export const services = [
   {
     title: 'Gypsum Ceilings',
     slug: 'gypsum-ceilings',
+    anchor: 'gypsum-ceilings',
     icon: FaShapes,
     image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80',
     description: 'Refined gypsum ceiling systems for a smooth, luxurious and architectural finish.',
@@ -40,6 +43,7 @@ export const services = [
   {
     title: 'POP Designs',
     slug: 'pop-designs',
+    anchor: 'pop-designs',
     icon: FaDraftingCompass,
     image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
     description: 'Elegant POP ceiling and wall details designed to match your interior theme.',
@@ -49,6 +53,7 @@ export const services = [
   {
     title: 'WPC Panels',
     slug: 'wpc-panels',
+    anchor: 'wpc-panels',
     icon: FaCubes,
     image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80',
     description: 'Sophisticated WPC panels and louvers for modern feature walls and partitions.',
@@ -58,6 +63,7 @@ export const services = [
   {
     title: 'Louvers',
     slug: 'louvers',
+    anchor: 'louvers',
     icon: FaLayerGroup,
     image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=80',
     description: 'Statement louver installations for TV units, partitions, reception walls and retail zones.',
@@ -67,6 +73,7 @@ export const services = [
   {
     title: 'Residential Interiors',
     slug: 'residential-interiors',
+    anchor: 'residential-interiors',
     icon: FaHome,
     image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
     description: 'Complete home interior design for living rooms, bedrooms, kitchens and renovations.',
@@ -76,6 +83,7 @@ export const services = [
   {
     title: 'Commercial Interiors',
     slug: 'commercial-interiors',
+    anchor: 'commercial-interiors',
     icon: FaStore,
     image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80',
     description: 'Practical and premium interiors for offices, shops, restaurants and showrooms.',
@@ -85,6 +93,7 @@ export const services = [
   {
     title: 'Interior Contracting',
     slug: 'interior-contracting',
+    anchor: 'interior-contracting',
     icon: FaBuilding,
     image: 'https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80',
     description: 'End-to-end execution with experienced supervision, quality checks and neat handover.',
@@ -94,6 +103,7 @@ export const services = [
   {
     title: 'UPVC Doors',
     slug: 'upvc-doors',
+    anchor: 'upvc-doors',
     icon: FaBuilding,
     image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80',
     description: 'High-performance UPVC doors for Dimapur homes and offices, delivering noise reduction, weather resistance and a clean finish for Nagaland and Assam interiors.',
@@ -108,6 +118,7 @@ export const services = [
   {
     title: 'UPVC Windows',
     slug: 'upvc-windows',
+    anchor: 'upvc-windows',
     icon: FaShapes,
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
     description: 'Energy-efficient UPVC windows for Dimapur and Kohima interiors, designed to improve ventilation, reduce dust ingress and match contemporary home design.',
@@ -122,6 +133,7 @@ export const services = [
   {
     title: 'Aluminium Doors',
     slug: 'aluminium-doors',
+    anchor: 'aluminium-doors',
     icon: FaBuilding,
     image: 'https://images.unsplash.com/photo-1585690112456-0b2c3986d914?auto=format&fit=crop&w=1200&q=80',
     description: 'Modern aluminium doors for offices and homes in Dimapur, Chümoukedima and Kohima, offering strength, slim profiles and high-end finishes.',
@@ -136,6 +148,7 @@ export const services = [
   {
     title: 'Aluminium Windows',
     slug: 'aluminium-windows',
+    anchor: 'aluminium-windows',
     icon: FaShapes,
     image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80',
     description: 'Premium aluminium windows for Dimapur and Mokokchung homes, combining clean lines, strong frames and excellent ventilation for modern Nagaland interiors.',
@@ -150,6 +163,7 @@ export const services = [
   {
     title: 'UPVC & Aluminium Solutions',
     slug: 'upvc-aluminium-solutions',
+    anchor: 'upvc-aluminium-solutions',
     icon: FaBuilding,
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
     description: 'Complete UPVC and aluminium solutions for doors and windows across Dimapur, Kohima, Lahorijan and Bokajan, designed for durability, aesthetics and weather resilience.',
@@ -164,6 +178,7 @@ export const services = [
   {
     title: 'Steel Railings',
     slug: 'steel-railings',
+    anchor: 'steel-railings',
     icon: FaCubes,
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
     description: 'Durable steel railings for residential and commercial projects in Dimapur, Kohima and Bokajan, offering strong support and clean modern detailing.',
@@ -178,6 +193,7 @@ export const services = [
   {
     title: 'Staircase Railings',
     slug: 'staircase-railings',
+    anchor: 'staircase-railings',
     icon: FaLayerGroup,
     image: 'https://images.unsplash.com/photo-1581091012184-37e7c985c184?auto=format&fit=crop&w=1200&q=80',
     description: 'Stylish staircase railings for Dimapur and Chümoukedima homes, designed to enhance safety and create a refined architectural statement.',
@@ -192,6 +208,7 @@ export const services = [
   {
     title: 'Balcony Railings',
     slug: 'balcony-railings',
+    anchor: 'balcony-railings',
     icon: FaStore,
     image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80',
     description: 'Contemporary balcony railings for Dimapur and Bokajan properties, combining safety, style and long-lasting materials for outdoor and indoor balconies.',
@@ -206,6 +223,7 @@ export const services = [
   {
     title: 'Custom Steel Railings',
     slug: 'custom-steel-railings',
+    anchor: 'custom-steel-railings',
     icon: FaBuilding,
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
     description: 'Bespoke steel railings for Dimapur, Kohima and Lahorijan projects, crafted to suit staircase, balcony and mezzanine applications with premium detailing.',
@@ -220,6 +238,7 @@ export const services = [
   {
     title: '2x2 Ceiling Boards',
     slug: '2x2-ceiling-boards',
+    anchor: '2x2-ceiling-boards',
     icon: FaRegLightbulb,
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
     description: '2x2 ceiling board systems for commercial and residential spaces in Dimapur and Assam, providing fast installation and clean acoustic performance.',
@@ -234,6 +253,7 @@ export const services = [
   {
     title: 'Grid Ceiling Systems',
     slug: 'grid-ceiling-systems',
+    anchor: 'grid-ceiling-systems',
     icon: FaRegLightbulb,
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
     description: 'Grid ceiling systems for Dimapur offices and commercial spaces, offering flexible access, clean lines and reliable support for lighting and services.',
@@ -248,6 +268,7 @@ export const services = [
   {
     title: 'Commercial Ceiling Solutions',
     slug: 'commercial-ceiling-solutions',
+    anchor: 'commercial-ceiling-solutions',
     icon: FaRegLightbulb,
     image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80',
     description: 'Commercial ceiling solutions for Dimapur and Lahorijan retail, office and hospitality spaces with durable boards, lighting integration and moisture-resistant finishes.',
@@ -262,6 +283,7 @@ export const services = [
   {
     title: 'Wall Panels',
     slug: 'wall-panels',
+    anchor: 'wall-panels',
     icon: FaLayerGroup,
     image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
     description: 'Premium wall panels for Dimapur and Nagaland interiors, offering a fast upgrade for feature walls, reception areas and residential rooms.',
@@ -276,6 +298,7 @@ export const services = [
   {
     title: 'PVC Wall Panels',
     slug: 'pvc-wall-panels',
+    anchor: 'pvc-wall-panels',
     icon: FaLayerGroup,
     image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
     description: 'Waterproof PVC wall panels for Dimapur and Kohima interiors, designed to protect walls from dampness while delivering elegant, maintenance-free finishes.',
@@ -290,6 +313,7 @@ export const services = [
   {
     title: 'WPC Wall Panels',
     slug: 'wpc-wall-panels',
+    anchor: 'wpc-wall-panels',
     icon: FaCubes,
     image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80',
     description: 'Elegant WPC wall panels for Dimapur and Mon interiors, providing natural wood-look texture with durable, weather-tolerant performance.',
@@ -304,6 +328,7 @@ export const services = [
   {
     title: 'Decorative Wall Panels',
     slug: 'decorative-wall-panels',
+    anchor: 'decorative-wall-panels',
     icon: FaShapes,
     image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
     description: 'Decorative wall panels for living rooms, feature walls and reception spaces in Dimapur, Kohima and Lahorijan interiors, adding texture, depth and premium visual appeal.',
@@ -318,6 +343,7 @@ export const services = [
   {
     title: 'Wall Cladding',
     slug: 'wall-cladding',
+    anchor: 'wall-cladding',
     icon: FaShapes,
     image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
     description: 'Durable wall cladding solutions for Dimapur homes and retail spaces, designed to protect surfaces while delivering a refined architectural finish.',
@@ -332,6 +358,7 @@ export const services = [
   {
     title: 'Louvers Installation',
     slug: 'louvers-installation',
+    anchor: 'louvers-installation',
     icon: FaLayerGroup,
     image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=80',
     description: 'Stylish louvers installation for Dimapur and Bokajan interiors, perfect for feature walls, partitions and ceiling accents with modern visual rhythm.',
