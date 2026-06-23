@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
-import { FaBars, FaMoon, FaSun, FaTimes } from 'react-icons/fa';
-import { business } from '../data/business.js';
-import { useTheme } from '../context/ThemeContext.jsx';
-import logo from '../assets/logo/interior_decor_logo.webp';
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
+import { FaBars, FaMoon, FaSun, FaTimes } from "react-icons/fa";
+import { business } from "../data/business.js";
+import { useTheme } from "../context/ThemeContext.jsx";
+import logo from "../assets/logo/interior_decor_logo.webp";
 // import logo from '../assets/logo/interiorDecorLogo.png';
 
 const links = [
-  { label: 'Home', path: '/' },
-  { label: 'About', path: '/about' },
-  { label: 'Services', path: '/services' },
-  { label: 'Portfolio', path: '/portfolio' },
-  { label: 'Contact', path: '/contact' },
+  { label: "Home", path: "/" },
+  { label: "About", path: "/about" },
+  { label: "Services", path: "/services" },
+  { label: "Portfolio", path: "/portfolio" },
+  { label: "Contact", path: "/contact" },
 ];
 
 export default function Navbar() {
@@ -21,13 +21,26 @@ export default function Navbar() {
 
   const navClass = ({ isActive }) =>
     `text-sm font-semibold uppercase tracking-[0.18em] transition ${
-      isActive ? 'text-gold' : 'text-charcoal hover:text-gold dark:text-dark-text dark:hover:text-gold'
+      isActive
+        ? "text-gold"
+        : "text-charcoal hover:text-gold dark:text-dark-text dark:hover:text-gold"
     }`;
 
   return (
     <header className="sticky top-0 z-50 border-b border-charcoal/10 bg-ivory/90 backdrop-blur-xl transition-colors duration-300 dark:border-white/10 dark:bg-dark-bg/90">
       <nav className="container-lux flex h-20 items-center justify-between">
-        <Link to="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link
+          to="/"
+          className="group flex items-center gap-3"
+          onClick={() => {
+            setOpen(false);
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
           <img
             src={logo}
             alt="Interior Decor logo"
@@ -39,13 +52,17 @@ export default function Navbar() {
             <span className="font-heading text-xl font-bold tracking-wide text-charcoal dark:text-dark-text sm:text-2xl">
               INTERIOR DECOR
             </span>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-gold">Nagaland</span>
+            <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-gold">
+              Nagaland
+            </span>
           </div>
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">
           {links.map((link) => (
-            <NavLink key={link.path} to={link.path} className={navClass}>
+            <NavLink key={link.path} to={link.path} className={navClass}
+              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+            >
               {link.label}
             </NavLink>
           ))}
@@ -56,11 +73,14 @@ export default function Navbar() {
             type="button"
             onClick={toggleTheme}
             className="grid h-11 w-11 place-items-center border border-charcoal/20 text-charcoal transition hover:border-gold hover:text-gold dark:border-white/15 dark:text-dark-text"
-            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
             {isDark ? <FaSun /> : <FaMoon />}
           </button>
-          <a href={business.phoneHref} className="text-sm font-bold text-charcoal hover:text-gold dark:text-dark-text dark:hover:text-gold">
+          <a
+            href={business.phoneHref}
+            className="text-sm font-bold text-charcoal hover:text-gold dark:text-dark-text dark:hover:text-gold"
+          >
             {business.phone}
           </a>
         </div>
@@ -70,7 +90,7 @@ export default function Navbar() {
             type="button"
             onClick={toggleTheme}
             className="grid h-11 w-11 place-items-center border border-charcoal/20 text-charcoal transition hover:border-gold hover:text-gold dark:border-white/15 dark:text-dark-text"
-            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
             {isDark ? <FaSun /> : <FaMoon />}
           </button>
@@ -90,13 +110,18 @@ export default function Navbar() {
         {open && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
+            animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className="overflow-hidden border-t border-charcoal/10 bg-white transition-colors duration-300 dark:border-white/10 dark:bg-dark-surface lg:hidden"
           >
             <div className="container-lux flex flex-col gap-5 py-6">
               {links.map((link) => (
-                <NavLink key={link.path} to={link.path} className={navClass} onClick={() => setOpen(false)}>
+                <NavLink
+                  key={link.path}
+                  to={link.path}
+                  className={navClass}
+                  onClick={() => setOpen(false)}
+                >
                   {link.label}
                 </NavLink>
               ))}

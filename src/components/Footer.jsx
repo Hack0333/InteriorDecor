@@ -88,7 +88,12 @@ export default function Footer() {
             <h3 className="text-lg font-bold">Quick Links</h3>
             <div className="mt-5 grid gap-3 text-white/70">
               {quickLinks.map((item) => (
-                <Link key={item.label} to={item.to} className="hover:text-gold">
+                <Link
+                  key={item.label}
+                  to={item.to}
+                  className="hover:text-gold"
+                  onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
+                >
                   {item.label}
                 </Link>
               ))}

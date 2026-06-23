@@ -11,7 +11,8 @@ export default function CTA() {
             Ready to Transform Your Space?
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-white/70 dark:text-dark-muted">
-            Speak with INTERIOR DECOR for false ceiling, PVC panels, wall panels and complete interior design services in Dimapur and across Nagaland.
+            {/* Speak with INTERIOR DECOR for false ceiling, PVC panels, wall panels and complete interior design services in Dimapur and across Nagaland . */}
+            Transform your space with INTERIOR DECOR. We provide false ceilings, PVC panels, wall panels, and complete interior design services in Dimapur, throughout Nagaland, and in Lahorijan and nearby areas of Assam.
           </p>
           <a href={business.whatsapp} className="btn-primary mt-8">
             <FaWhatsapp /> Get Free Consultation
