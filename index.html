@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png" />
-    <title>INTERIOR DECOR | Best Interior Designers in Dimapur, Nagaland and Assam</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <title>
+      INTERIOR DECOR | Best Interior Designers in Dimapur, Nagaland and Assam
+    </title>
     <meta
       name="description"
       content="INTERIOR DECOR offers premium residential and commercial interior design services across Dimapur, Kohima, and Nagaland. Specializing in modern modular kitchens, living rooms, and custom home decor."
@@ -18,11 +23,13 @@
     <script>
       (function () {
         try {
-          var savedTheme = localStorage.getItem('interior-decor-theme');
-          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-            document.documentElement.classList.add('dark');
-            document.documentElement.style.colorScheme = 'dark';
+          var savedTheme = localStorage.getItem("interior-decor-theme");
+          var prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+            document.documentElement.classList.add("dark");
+            document.documentElement.style.colorScheme = "dark";
           }
         } catch (error) {
           /* Keep the default light theme if storage or media queries are unavailable. */
@@ -53,7 +60,13 @@
               "postalCode": "797112",
               "addressCountry": "IN"
             },
-            "areaServed": ["Dimapur", "Chümoukedima", "Kohima", "Nagaland , Loharijan , Assam", "Northeast India"],
+            "areaServed": [
+              "Dimapur",
+              "Chümoukedima",
+              "Kohima",
+              "Nagaland , Loharijan , Assam",
+              "Northeast India"
+            ],
             "sameAs": ["https://www.instagram.com/interiordecor_nagaland/"],
             "geo": {
               "@type": "GeoCoordinates",
@@ -77,7 +90,14 @@
             "@type": "Service",
             "name": "Interior Design and False Ceiling Services",
             "provider": { "@id": "https://interiordecordimapur.com/services" },
-            "serviceType": ["False Ceiling", "PVC Panels", "Gypsum Ceiling", "POP Designs", "Wall Panels", "Commercial Interior Design"],
+            "serviceType": [
+              "False Ceiling",
+              "PVC Panels",
+              "Gypsum Ceiling",
+              "POP Designs",
+              "Wall Panels",
+              "Commercial Interior Design"
+            ],
             "areaServed": ["Dimapur", "Kohima", "Chümoukedima", "Nagaland"]
           },
           {
