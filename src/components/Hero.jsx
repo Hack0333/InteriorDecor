@@ -16,24 +16,31 @@ export default function Hero() {
         transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
-      <div className="container-lux relative flex min-h-[calc(100vh-5rem)] items-center pb-16 pt-20">
+      {/* <div className="container-lux relative flex min-h-[calc(100vh-5rem)] items-center pb-16 pt-20"> */}
+        <div className="container-lux relative flex min-h-[calc(100vh-5rem)] items-center py-16 sm:pt-20 sm:pb-16">
         <motion.div
           initial={{ opacity: 0, y: 34 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="max-w-4xl"
         >
-          <p className="section-kicker text-gold">Premium Interior Design in Nagaland and Assam.</p>
-          <h1 className="mt-5 text-5xl font-bold leading-[1.02] sm:text-6xl lg:text-7xl">
+          {/* <p className="section-kicker text-gold"> */}
+          <p className="section-kicker text-xs tracking-[0.18em] text-gold sm:text-sm">
+          Premium Interior Design in Nagaland and Assam.</p>
+          {/* <h1 className="mt-5 text-5xl font-bold leading-[1.02] sm:text-6xl lg:text-7xl"> */}
+          <h1 className="mt-5 text-3xl font-bold leading-tight sm:text-5xl lg:text-7xl">
             Transforming Spaces Across Nagaland and Assam
           </h1>
-          <p className="mt-4 text-xl font-semibold uppercase tracking-[0.2em] text-white/85">
+          {/* <p className="mt-4 text-xl font-semibold uppercase tracking-[0.2em] text-white/85"> */}
+          <p className="mt-4 text-sm font-semibold uppercase tracking-[0.12em] text-white/85 sm:text-lg sm:tracking-[0.18em]">
             Professional Interior Designers in Dimapur and Lahorijan
           </p>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85 sm:text-xl">
+          {/* <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85 sm:text-xl"> */}
+          <p className="mt-5 max-w-2xl text-base leading-7 text-white/85 sm:text-lg sm:leading-8 lg:text-xl">
             Expert residential and commercial interior design services rooted in Dimapur and Lahorijan, serving homes and offices across Nagaland and Assam with modern, functional, and meaningful spaces.
           </p>
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+          {/* <div className="mt-9 flex flex-col gap-4 sm:flex-row"> */}
+          <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:gap-4">
             <a href={business.whatsapp} className="btn-primary">
               Get Free Consultation <FaArrowRight />
             </a>
