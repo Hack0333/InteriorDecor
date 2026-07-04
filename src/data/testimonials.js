@@ -3,6 +3,7 @@ export const testimonials = [
     name: 'A.s Gadget Store',
     role: 'Retail Client',
     rating: 5,
+    date: '2 months ago',
     review: 'Best place in Dimapur for modern ceiling and interior work. The finishing, lighting design and overall service was really impressive. Staff were polite and completed the work on time. Highly recommended for anyone looking to upgrade their home interiors.',
   },
   {
